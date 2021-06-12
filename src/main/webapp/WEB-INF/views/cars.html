@@ -21,7 +21,7 @@
       <div class="card-header" th:text="${car.getModel()}"/>
       <ul class="list-group list-group-flush">
         <li class="list-group-item" th:text="|color: ${car.getColor()}|"/>
-        <li class="list-group-item" th:text="|year of buid: ${car.getYear()}|"/>
+        <li class="list-group-item" th:text="|year: ${car.getYear()}|"/>
         <li class="list-group-item" th:text="|price: ${#numbers.formatDecimal(car.getPrice(), 0, 'COMMA', 2, 'POINT')} rub.|"/>
       </ul>
     </div>
